@@ -1,0 +1,17 @@
+<table >
+    <thead>
+        <th>First Names</th>
+        <th>Last Name</th>
+        <th>User Name</th>
+        <th>Points</th>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let tempPlayerStats of playerStatsList">
+            <td>{{ tempPlayerStats.firstName }}</td>
+            <td>{{ tempPlayerStats.lastName }}</td>
+            <td>{{ tempPlayerStats.userName }}</td>
+            <td>{{ tempPlayerStats.points }}</td>
+        </tr>
+    </tbody>
+</table>
