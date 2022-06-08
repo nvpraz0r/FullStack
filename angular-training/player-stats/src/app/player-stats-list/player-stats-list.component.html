@@ -5,6 +5,7 @@
             <th>Last Name</th>
             <th>User Name</th>
             <th>Points</th>
+            <th>Qualified (points >= 300)</th>
         </tr>
     </thead>
 
@@ -14,6 +15,10 @@
             <td>{{ tempPlayerStats.lastName }}</td>
             <td>{{ tempPlayerStats.userName }}</td>
             <td>{{ tempPlayerStats.points }}</td>
+            <td>
+                <div *ngIf="tempPlayerStats.points >= 300; else playerPointBlock">Yes</div>
+                <ng-template #playerPointBlock>No</ng-template>
+            </td>
         </tr>
     </tbody>
 </table>
