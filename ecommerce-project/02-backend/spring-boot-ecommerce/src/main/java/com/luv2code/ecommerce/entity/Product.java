@@ -1,4 +1,4 @@
-package com.love2code.ecommerce.entity;
+package com.luv2code.ecommerce.entity;
 
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
@@ -12,6 +12,7 @@ import java.util.Date;
 @Table(name="product")
 @Data
 public class Product {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
